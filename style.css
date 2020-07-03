@@ -1,0 +1,99 @@
+:root {
+  font-family: 'Orbitron', sans-serif;
+}
+h1 {
+  font-size: 50px;
+  padding: 0;
+  margin: 20px;
+  text-align: center;
+}
+#container {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result {
+  height: 100px;
+}
+
+#calculator {
+  background-color: rgb(243, 236, 236);
+  width: 300px;
+  height: 650px;
+  padding: 20px 15px 0 15px;
+  display: grid;
+  grid-template-rows: 230px 400px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 40px 10px rgb(51, 51, 51);
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(243, 236, 236);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding-right: 10px;
+}
+#subdisplay, #result {
+  width: 100%;
+  height: 50%;
+} 
+
+#result {
+  margin-bottom: 20px;
+  font-size: 45px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+#subdisplay {
+  font-size: 26px;
+  color:lightseagreen;
+  text-align: right;
+  padding-top: 40px;
+}
+
+#buttons {
+  border: none;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  font-size: 30px;
+  font-weight: 900;
+  column-gap: 10px;
+}
+
+#operands {
+  background-color: rgb(243, 236, 236);
+  display: grid;
+  grid-template-columns: repeat(3, 8fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+#operators {
+  background-color: rgb(243, 236, 236);
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 10px;
+}
+
+#equal {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+button  {
+  border: none;
+  background: none;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
